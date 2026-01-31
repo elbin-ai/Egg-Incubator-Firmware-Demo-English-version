@@ -1,26 +1,48 @@
 Firmware Demo English version: 
 Please also read the file ManualEggIncubator V.2.03.docx
+
 Combinations that are already Run ON:
+
 Aeduino IDE Version: 2.3.2
+
 Date: 2024-02-20T10:04:35.814Z
+
 CLI Version: 0.35.3
+
 Copyright © 2025 Arduino SA
+
 Board: esp32 by Espressif System Versi 2.0.14
+
 Library:
+
 Adafruit Bus IO Versi 1.17.4
+
 Adafruit Unified Sensor Versi 1.1.15
+
 Arduinojson by Benoit B Versi 7.4.2
+
 https://github.com/ESP32Async/AsyncTCP Versi 3.4.10
+
 https://github.com/adafruit/DHT-sensor-library Versi 3.4.6
+
 https://github.com/ESP32Async/ESPAsyncWebServer Versi 3.9.5
+
 https://github.com/MajicDesigns/MD_MAX72XX Versi 3.5.1
+
 https://github.com/MajicDesigns/MD_Parola  Versi 3.7.5
+
 https://github.com/adafruit/RTClib Versi 2.1.4
+
 Arduino Tools Setting :
+
 Board             : "ESP32-DEV-MODULE"
+
 Upload Speed      : "115200"
+
 Flash Size        : 4MB (32Mb)
+
 Partition Schema  : "Huge APP (3MB No OTA 1MB LittleFS)"
+
 Events Run On     : "Core 0"
 
 Arduino Runs On   : "Core 1"
@@ -132,7 +154,9 @@ COM: COM5 (change it to your port)
 BAUDRATE: 115200
 
 🔹 4. Additional Options (Recommended)
+
 ✔️ Erase Flash → enable (only once, especially when changing firmware)
+
 ❌ DoNotChgBin → DO NOT check
 
 ▶️ 5. Flashing Process
@@ -146,40 +170,66 @@ Press and hold the BOOT button on the ESP32
 Release it when flashing starts
 
 Wait until the status shows FINISH / SUCCESS
+
 ✅ Signs of SUCCESSFUL Flashing
+
 No red error messages
+
 ESP32 resets automatically
+
 Web / LittleFS accessible normally
+
 No reboot loop
 
+
 🧠 Troubleshooting Tips
+
 Blank web page / 404 → LittleFS address is incorrect
+
 Continuous reset → firmware & partition mismatch
+
 Connection failed → press & hold BOOT while clicking START
+
 Slow / failed flashing → lower baudrate to 74880 or 115200
 
+
 Debug Output:
+
 LittleFS mount Success...
+
 📂 Files already exist, not writing default.
+
 Init RTC Success!
+
 DHT sensor Normal...
 Connecting to WiFi: Smart-Router
 ...........
 ✅ Connected to WiFi!
+
 IP: 192.168.1.109
+
 WiFi mode active: STA
+
 Ready to serve...
+
 ✅ Activation code stored
 
 Dashboard Display (Bottom Section):
+
 Status: Registered @Isokunitech
 ==========================================================================================
 This demo version only displays limited features.
+
 Full Version:
+
 Obtained through user registration.
+
 After registration, proceed with the license payment according to the applicable terms.
+
 Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
-Contact for Full Version & Activation: 0813-1970-7919
+
+Contact for Full Version & Activation: langgengbintoro@gmail.com
+
 
 
 
