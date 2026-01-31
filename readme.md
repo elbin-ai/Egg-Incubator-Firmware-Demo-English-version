@@ -147,10 +147,15 @@ Do NOT change the address order
 🔹 3. Flash Settings (Right Section)
 
 Must match Arduino IDE:
+
 SPI MODE: DIO
+
 SPI SPEED: 80MHz
+
 FLASH SIZE: 4MB
+
 COM: COM5 (change it to your port)
+
 BAUDRATE: 115200
 
 🔹 4. Additional Options (Recommended)
@@ -204,6 +209,7 @@ Init RTC Success!
 DHT sensor Normal...
 Connecting to WiFi: Smart-Router
 ...........
+
 ✅ Connected to WiFi!
 
 IP: 192.168.1.109
@@ -229,6 +235,7 @@ After registration, proceed with the license payment according to the applicable
 Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
 
 Contact for Full Version & Activation: langgengbintoro@gmail.com
+
 
 
 
