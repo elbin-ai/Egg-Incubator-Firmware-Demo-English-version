@@ -1,19 +1,5 @@
-Firmware Demo English version:
-This demo version only displays limited features.
-
-Full Version:
-Obtained through user registration.
-
-After registration, proceed with the license payment according to the applicable terms.
-
-Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
-
-Contact for Full Version & Activation:
-0813-1970-7919
-
-Note: Please also read the file ManualEggIncubator V.2.03.docx
-==========================================================================================
-
+Firmware Demo English version: 
+Please also read the file ManualEggIncubator V.2.03.docx
 Combinations that are already Run ON:
 Version: 2.3.2
 Date: 2024-02-20T10:04:35.814Z
@@ -141,3 +127,11 @@ Ready to serve...
 
 Dashboard Display (Bottom Section):
 Status: Registered @Isokunitech
+==========================================================================================
+This demo version only displays limited features.
+Full Version:
+Obtained through user registration.
+After registration, proceed with the license payment according to the applicable terms.
+Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
+Contact for Full Version & Activation: 0813-1970-7919
+
