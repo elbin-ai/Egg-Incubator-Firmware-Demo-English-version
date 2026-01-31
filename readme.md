@@ -1,49 +1,26 @@
 Firmware Demo English version: 
-
 Please also read the file ManualEggIncubator V.2.03.docx
-
 Combinations that are already Run ON:
-
-Version: 2.3.2
-
+Aeduino IDE Version: 2.3.2
 Date: 2024-02-20T10:04:35.814Z
-
 CLI Version: 0.35.3
-
 Copyright © 2025 Arduino SA
-
 Board: esp32 by Espressif System Versi 2.0.14
-
 Library:
-
 Adafruit Bus IO Versi 1.17.4
-
 Adafruit Unified Sensor Versi 1.1.15
-
 Arduinojson by Benoit B Versi 7.4.2
-
 https://github.com/ESP32Async/AsyncTCP Versi 3.4.10
-
 https://github.com/adafruit/DHT-sensor-library Versi 3.4.6
-
 https://github.com/ESP32Async/ESPAsyncWebServer Versi 3.9.5
-
 https://github.com/MajicDesigns/MD_MAX72XX Versi 3.5.1
-
 https://github.com/MajicDesigns/MD_Parola  Versi 3.7.5
-
 https://github.com/adafruit/RTClib Versi 2.1.4
-
-Arduino Tiils Setting :
-
+Arduino Tools Setting :
 Board             : "ESP32-DEV-MODULE"
-
 Upload Speed      : "115200"
-
 Flash Size        : 4MB (32Mb)
-
 Partition Schema  : "Huge APP (3MB No OTA 1MB LittleFS)"
-
 Events Run On     : "Core 0"
 
 Arduino Runs On   : "Core 1"
@@ -203,5 +180,6 @@ Obtained through user registration.
 After registration, proceed with the license payment according to the applicable terms.
 Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
 Contact for Full Version & Activation: 0813-1970-7919
+
 
 
