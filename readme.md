@@ -130,13 +130,13 @@ Click OK
 
 Check ✔️ and set the addresses EXACTLY as follows:
 
-[✔] Penetas_ESP32_V203_Master_DS3231.ino.bootloader.bin   → 0x1000
+[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.bootloader.bin   → 0x1000
 
-[✔] Penetas_ESP32_V203_Master_DS3231.ino.partitions.bin   → 0x8000
+[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.partitions.bin   → 0x8000
 
-[✔] Penetas_ESP32_V203_Master_DS3231.ino.bin              → 0x10000
+[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.bin              → 0x10000
 
-[✔] Penetas_ESP32_V203_Master_DS3231.ino.littlefs.bin     → 0x310000
+[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.littlefs.bin     → 0x310000
 
 ⚠️ IMPORTANT
 
@@ -229,6 +229,7 @@ After registration, proceed with the license payment according to the applicable
 Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
 
 Contact for Full Version & Activation: langgengbintoro@gmail.com
+
 
 
 
