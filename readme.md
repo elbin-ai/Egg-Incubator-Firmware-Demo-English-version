@@ -1,243 +1,104 @@
-Firmware Demo English version: 
-Please also read the file ManualEggIncubator V.2.03.docx
+# Firmware Demo English Version
+This demo version only displays limited features.
 
-Combinations that are already Run ON:
+### 💎 Full Version
+Obtained through user registration.
+1. After registration, proceed with the license payment according to the applicable terms.
+2. Once the payment is verified, you will receive an activation code.
+3. Enter the code into the firmware to unlock all features.
 
-Aeduino IDE Version: 2.3.2
+**Contact for Full Version & Activation:**  
+📞 [WhatsApp: 0813-1970-7919](https://wa.me)
 
-Date: 2024-02-20T10:04:35.814Z
+> [!IMPORTANT]  
+> Please also read the file `ManualEggIncubator V.2.03.docx`
 
-CLI Version: 0.35.3
+---
 
-Copyright © 2025 Arduino SA
+## 🛠 Combinations & Environment
+| Property | Value |
+| :--- | :--- |
+| **Version** | 2.3.2 |
+| **Date** | 2024-02-20 |
+| **Board** | ESP32 by Espressif System (v2.0.14) |
+| **Copyright** | © 2025 Arduino SA |
 
-Board: esp32 by Espressif System Versi 2.0.14
+### 📚 Libraries Used
+- Adafruit Bus IO (v1.17.4)
+- Adafruit Unified Sensor (v1.1.15)
+- Arduinojson by Benoit B (v7.4.2)
+- [AsyncTCP](https://github.com/ESP32Async/AsyncTCP) (v3.4.10)
+- [DHT-sensor-library](https://github.com/adafruit/DHT-sensor-library) (v3.4.6)
+- [ESPAsyncWebServer](https://github.com/ESP32Async/ESPAsyncWebServer) (v3.9.5)
+- [MD_MAX72XX](https://github.com/MajicDesigns/MD_MAX72XX) (v3.5.1)
+- [MD_Parola](https://github.com/MajicDesigns/MD_Parola) (v3.7.5)
+- [RTClib](https://github.com/adafruit/RTClib) (v2.1.4)
 
-Library:
-
-Adafruit Bus IO Versi 1.17.4
-
-Adafruit Unified Sensor Versi 1.1.15
-
-Arduinojson by Benoit B Versi 7.4.2
-
-https://github.com/ESP32Async/AsyncTCP Versi 3.4.10
-
-https://github.com/adafruit/DHT-sensor-library Versi 3.4.6
-
-https://github.com/ESP32Async/ESPAsyncWebServer Versi 3.9.5
-
-https://github.com/MajicDesigns/MD_MAX72XX Versi 3.5.1
-
-https://github.com/MajicDesigns/MD_Parola  Versi 3.7.5
-
-https://github.com/adafruit/RTClib Versi 2.1.4
-
-Arduino Tools Setting :
-
+### ⚙️ Arduino Tools Setting
+```cpp
 Board             : "ESP32-DEV-MODULE"
-
 Upload Speed      : "115200"
-
 Flash Size        : 4MB (32Mb)
-
 Partition Schema  : "Huge APP (3MB No OTA 1MB LittleFS)"
-
 Events Run On     : "Core 0"
-
 Arduino Runs On   : "Core 1"
 
-#define CLK_PIN  18
+// Pin Mapping
+#define CLK_PIN       18
+#define CS_PIN         5
+#define DATA_PIN      23
+#define myBuzzer      26 
+#define myHeater      27
+#define myFan         19
+#define myHumidifier  17
+#define myEggTurner   16
+#define LedBuiltIn     2 
+Use code with caution.
 
-#define CS_PIN    5
-
-#define DATA_PIN 23
-
-#define myBuzzer     26 
-
-#define myHeater     27
-
-#define myFan        19
-
-#define myHumidifier 17
-
-#define myEggTurner  16
-
-#define LedBuiltIn    2 
-
-
-Important Summary from Arduino IDE Log
-
-From the log:
-
+📑 Important Summary from Arduino IDE Log
 Board: ESP32
-
 Flash Size: 4MB
-
 Partition scheme: huge_app
-
-LittleFS start address: 👉 0x310000 (THIS IS THE MOST IMPORTANT)
-
-Flash mode: dio
-
-Flash freq: 80m
-
-Crystal: 80MHz
-
-⚙️ Flash Download Tool Settings (Must Match Arduino)
-
-In flash_download_tool_3.9.9_R2.exe:
-
-ChipType: ESP32
-
+LittleFS start address: 👉 0x310000 (CRITICAL)
+Flash mode/freq: dio / 80m
+⚙️ Flash Download Tool Settings
+Configuration Layout (v3.9.9_R2):
 SPI MODE: DIO
-
 SPI SPEED: 80MHz
-
 FLASH SIZE: 4MB
-
-COM Port: COM5
-
 Baudrate: 115200
-
-✔️ Check all files to be flashed
-
-✅ Safe Flashing Order
-
-Erase Flash (if switching from another firmware)
-
-Flash bootloader
-
-Flash partition
-
-Flash firmware (.ino.bin)
-
-Flash littlefs.bin
-
-Complete Guide:
-
-🧩 flash_download_tool_3.9.9_R2.exe Configuration Layout
-
-🔹 1. Initial Mode Selection
-
-Chip Type: ESP32
-
-WorkMode: Develop
-
-Click OK
-
-🔹 2. File List Setup (Middle Section)
-
-Check ✔️ and set the addresses EXACTLY as follows:
-
-[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.bootloader.bin   → 0x1000
-
-[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.partitions.bin   → 0x8000
-
-[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.bin              → 0x10000
-
-[✔] EggIncubator_ESP32_V203_DHT22_DS3231_en.ino.littlefs.bin     → 0x310000
-
-⚠️ IMPORTANT
-
-LittleFS MUST be at 0x310000 (according to huge_app)
-
-Do NOT change the address order
-
-🔹 3. Flash Settings (Right Section)
-
-Must match Arduino IDE:
-
-SPI MODE: DIO
-
-SPI SPEED: 80MHz
-
-FLASH SIZE: 4MB
-
-COM: COM5 (change it to your port)
-
-BAUDRATE: 115200
-
-🔹 4. Additional Options (Recommended)
-
-✔️ Erase Flash → enable (only once, especially when changing firmware)
-
-❌ DoNotChgBin → DO NOT check
-
-▶️ 5. Flashing Process
-
-Press START
-
-If not connected:
-
-Press and hold the BOOT button on the ESP32
-
-Release it when flashing starts
-
-Wait until the status shows FINISH / SUCCESS
-
-✅ Signs of SUCCESSFUL Flashing
-
-No red error messages
-
-ESP32 resets automatically
-
-Web / LittleFS accessible normally
-
-No reboot loop
-
-
-🧠 Troubleshooting Tips
-
-Blank web page / 404 → LittleFS address is incorrect
-
-Continuous reset → firmware & partition mismatch
-
-Connection failed → press & hold BOOT while clicking START
-
-Slow / failed flashing → lower baudrate to 74880 or 115200
-
-
-Debug Output:
-
+🔹 File List Setup (Addresses)
+File Name	Address
+bootloader.bin	0x1000
+partitions.bin	0x8000
+firmware.ino.bin	0x10000
+littlefs.bin	0x310000
+🚀 Flashing Process Guide
+Initial Mode: Select Chip Type: ESP32 & WorkMode: Develop.
+Erase Flash: Enable (recommended for first time).
+Press START: If stuck, hold the BOOT button on ESP32 until flashing begins.
+Finish: Wait for FINISH / SUCCESS status.
+✅ Signs of Success
+No red error messages.
+ESP32 resets automatically.
+Web / LittleFS accessible.
+🧠 Troubleshooting
+404 / Blank Page: LittleFS address is wrong (must be 0x310000).
+Boot Loop: Firmware & partition mismatch.
+Connection Failed: Hold BOOT button during START.
+🖥 Debug Output
+text
 LittleFS mount Success...
-
 📂 Files already exist, not writing default.
-
 Init RTC Success!
-
 DHT sensor Normal...
 Connecting to WiFi: Smart-Router
 ...........
-
 ✅ Connected to WiFi!
-
 IP: 192.168.1.109
-
 WiFi mode active: STA
-
 Ready to serve...
-
 ✅ Activation code stored
+Use code with caution.
 
-Dashboard Display (Bottom Section):
-
-Status: Registered @Isokunitech
-==========================================================================================
-This demo version only displays limited features.
-
-Full Version:
-
-Obtained through user registration.
-
-After registration, proceed with the license payment according to the applicable terms.
-
-Once the payment is verified, you will receive an activation code. Enter the code into the firmware to unlock all features.
-
-Contact for Full Version & Activation: langgengbintoro@gmail.com
-
-
-
-
-
-
+Dashboard Status: Registered @Isokunitech
